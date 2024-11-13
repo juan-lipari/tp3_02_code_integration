@@ -250,10 +250,10 @@ static void displayPinWrite( uint8_t pinName, int value )
 
     	case DISPLAY_CONNECTION_GPIO_8BITS:
             switch( pinName ) {
-//                case DISPLAY_PIN_D0: HAL_GPIO_WritePin(D2_GPIO_Port,  D2_Pin,  value);   break;
-//                case DISPLAY_PIN_D1: HAL_GPIO_WritePin(D4_GPIO_Port,  D4_Pin,  value);   break;
-//                case DISPLAY_PIN_D2: HAL_GPIO_WritePin(D5_GPIO_Port,  D5_Pin,  value);   break;
-//                case DISPLAY_PIN_D3: HAL_GPIO_WritePin(D6_GPIO_Port,  D6_Pin,  value);   break;
+                case DISPLAY_PIN_D0: HAL_GPIO_WritePin(D2_GPIO_Port,  D2_Pin,  value);   break;
+                case DISPLAY_PIN_D1: HAL_GPIO_WritePin(D4_GPIO_Port,  D4_Pin,  value);   break;
+                case DISPLAY_PIN_D2: HAL_GPIO_WritePin(D5_GPIO_Port,  D5_Pin,  value);   break;
+                case DISPLAY_PIN_D3: HAL_GPIO_WritePin(D6_GPIO_Port,  D6_Pin,  value);   break;
                 case DISPLAY_PIN_D4: HAL_GPIO_WritePin(D7_GPIO_Port,  D7_Pin,  value);   break;
                 case DISPLAY_PIN_D5: HAL_GPIO_WritePin(D8_GPIO_Port,  D8_Pin,  value);   break;
                 case DISPLAY_PIN_D6: HAL_GPIO_WritePin(D9_GPIO_Port,  D9_Pin,  value);   break;

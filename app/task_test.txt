@@ -1,4 +1,27 @@
   task_test.c (task_test.h) 
    Non-Blocking & Update By Time Code -> Test Code Integration
-  
-...
+   
+  task_test_attribute.h contiene:
+
+	 task_test_dta_t: estructura de un solo campo usado como contador para demorar la escritura en el
+	 display luego de un intervalo
+	
+
+    
+task_test.c contiene:
+
+	definiciones para distintos valores de tick a utilizar para el parpadeo y el refresco del display.
+	
+	task_test_dta: estructura del display inicializada con el valor minimo de tick definido.
+
+    el método task_test_init():
+        imprime por consola el método invocado, y los estados iniciales de la estructura
+        define el modo de conexión con el display en 4 Bits e imprime "TdSE Bienvenidos"
+        en la primer linea y "Test Nro: "
+
+        
+    el método task_test_update(), imprime en la segunda linea el numero de test, donde:
+    	    	
+    	con cada invocación aumenta en 1 (uno) el numero del test, de haberse transcurrido el tiempo 
+    	definido, se reinicia el campo de tick y se actualiza el display con el numero del test
+    	actualizado. 

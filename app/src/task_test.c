@@ -93,7 +93,7 @@ void task_test_init(void *parameters)
 	tick = p_task_test_dta->tick;
 	LOGGER_LOG("   %s = %lu", GET_NAME(tick), (uint32_t)tick);
 
-    displayInit( DISPLAY_CONNECTION_GPIO_4BITS );
+    displayInit( DISPLAY_CONNECTION_GPIO_8BITS );
 
     displayCharPositionWrite(0, 0);
 	displayStringWrite("TdSE Bienvenidos");
